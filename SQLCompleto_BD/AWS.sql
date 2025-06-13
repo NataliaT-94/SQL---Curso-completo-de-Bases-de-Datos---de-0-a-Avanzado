@@ -85,3 +85,9 @@
 -- Logs & events
     --Es un historial, muestra como fue cambiando el CLoudWatch
     -- logs
+
+-------------------- Conexcion con HeidiSQL -------------------
+--host: Colocamos el Enpoint que nos v¿creo el aws
+--Colocar la password
+--tildar Protocolo cliente/ servidor comprimido
+--
