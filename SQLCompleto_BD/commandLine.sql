@@ -106,8 +106,15 @@ mysqldump -u root -p -h localhost (nombre de la base de datos alcual vamos hacer
 mysqldump -u root -p -h localhost --triggers --routines (nombre de la base de datos alcual vamos hacer el Backups) > (nombre del DUMP)
 --Esto guarda tablas triggers y demas parametros
 
+mysqldump -u root -p -h localhost --databases
+
+mysqldump -u root -p -h localhost --databases curso sakila > d:\miBackup.sql
+
+mysqldump -u root -p -h localhost --databases curso sakila --routines --triggers --events --no-data > d:\miBackup.sql
+
 ----------- restore---------------
 
 mysql -u root -p -h localhost (nombre de la base de datos al cual vamos hacer el Backups) < (nombre del archivo del backap)
 
+mysql -u root -p -h localhost < d:\miBackup.sql
 
