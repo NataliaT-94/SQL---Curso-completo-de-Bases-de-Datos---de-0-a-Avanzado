@@ -62,4 +62,26 @@
     --Monitoring
         --Enable Enhanced monitoring: Sirve para ver como esta el procesador de la bd
     --Deletion protection
-        --Enable delection protection: protege la db para que no se pueda borrar
+        --Enable delection protection: protege la db para que no se pueda 
+    
+
+
+
+-------------------- Manejo del panel RDS -------------------
+
+-- Security
+    --Reglas de entrada
+        --Puerto 3306
+        --origen: IP Habilitado para acceder directamente a la bd de manera remota.
+        --Para editar la IP y que puedan acceder de distintos puerto colocal 0000/0
+
+    -- Enpoint: 
+        --Sirve para poder acceder desde HeidiSQL, En vez de utilizar el localhost, utilizamos el endpoint
+
+-- Monitoring
+    --CloudWatch
+        -- Son medidores de mi bd
+
+-- Logs & events
+    --Es un historial, muestra como fue cambiando el CLoudWatch
+    -- logs
